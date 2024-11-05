@@ -8,7 +8,7 @@ let registrosTabla = document.getElementById("registrosCiudad");
 function getAllCities() {
   registrosTabla.innerHTML = ''; // Limpiar la tabla antes de insertar el nuevo dato
   //imprimimos todos los datos
-  axios.get('//35.168.9.215/geolocation/php/connect.php?action=getAll')
+  axios.get('//54.204.178.33/geolocation/php/connect.php?action=getAll')
     .then(function (response) {
       let registrosArreglo = response.data;
       registrosArreglo.forEach(item => {
